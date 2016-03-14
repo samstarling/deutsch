@@ -1,0 +1,231 @@
+{:	data{o:Nanoc::Identifier:
+@type:	full:@stringI"/index.html:ET{:default{	:	lasto:Nanoc::Int::TextualContent:@filename0;	I"≤<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A Brand New Nanoc Site - Home</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc 4.1.4">
+  </head>
+  <body>
+    <div id="main">
+      
+<h2>Nominativ</h2>
+
+<ul>
+  <li>
+    <span class="nom">Der Student</span> lernt Deutsch.<br/>
+    <i>The student learns German.</i>
+  </li>
+  <li>
+    <span class="nom">Das</span> ist <abbr title="der Tisch" class="nom">ein Tisch</abbr>.<br/>
+    <i>That is a table.</i>
+  </li>
+</ul>
+
+<h2>Akkusativ</h2>
+
+<ul>
+  <li>
+    Ich habe <abbr title="der Tisch" class="akk">einen Tisch</abbr>.<br/>
+    <i>I have a table</i>
+  </li>
+  <li>
+    Er geht <span class="akk">um <abbr title="der Tisch">den Tisch</abbr></span>.<br/>
+    <i>He goes around the table.</i>
+  </li>
+  <li>
+    Ist das Geschenk <span class="akk">f√ºr mich?</span><br/>
+    <i>Is that gift for me?</i>
+  </li>
+</ul>
+
+<h2>Dativ</h2>
+
+<ul>
+  <li>
+    Ich gebe <abbr title="die Frau" class="dat">der Frau</abbr> <abbr class="nom" title="das Buch">ein Buch</abbr>.<br/>
+    <i>I am giving a book to the woman.</i>
+  </li>
+  <li>
+    Er schenkt <span class="dat">mir</span> <abbr class="nom" title="das Buch">ein Buch</abbr>.<br/>
+    <i>He is giving me a book.</i>
+  </li>
+</ul>
+
+    </div>
+    <div id="sidebar">
+      <h2>Sidebar</h2>
+    </div>
+  </body>
+</html>
+;
+T:rawo;;I"K/Users/samstarling/Development/personal/nom-akk-dat/content/index.html;
+T;	I"
+<h2>Nominativ</h2>
+
+<ul>
+  <li>
+    <span class="nom">Der Student</span> lernt Deutsch.<br/>
+    <i>The student learns German.</i>
+  </li>
+  <li>
+    <span class="nom">Das</span> ist <abbr title="der Tisch" class="nom">ein Tisch</abbr>.<br/>
+    <i>That is a table.</i>
+  </li>
+</ul>
+
+<h2>Akkusativ</h2>
+
+<ul>
+  <li>
+    Ich habe <abbr title="der Tisch" class="akk">einen Tisch</abbr>.<br/>
+    <i>I have a table</i>
+  </li>
+  <li>
+    Er geht <span class="akk">um <abbr title="der Tisch">den Tisch</abbr></span>.<br/>
+    <i>He goes around the table.</i>
+  </li>
+  <li>
+    Ist das Geschenk <span class="akk">f√ºr mich?</span><br/>
+    <i>Is that gift for me?</i>
+  </li>
+</ul>
+
+<h2>Dativ</h2>
+
+<ul>
+  <li>
+    Ich gebe <abbr title="die Frau" class="dat">der Frau</abbr> <abbr class="nom" title="das Buch">ein Buch</abbr>.<br/>
+    <i>I am giving a book to the woman.</i>
+  </li>
+  <li>
+    Er schenkt <span class="dat">mir</span> <abbr class="nom" title="das Buch">ein Buch</abbr>.<br/>
+    <i>He is giving me a book.</i>
+  </li>
+</ul>
+;
+T:pre@:	post@o;;;;	I"/stylesheet.css;
+T{;{;o;;I"O/Users/samstarling/Development/personal/nom-akk-dat/content/stylesheet.css;
+T;	I"∂* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Georgia, Palatino, serif;
+}
+
+.nom {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.akk {
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.dat {
+  background: rgba(0, 0, 255, 0.1);
+}
+
+abbr {
+  border-bottom: 1px solid #aaa;
+  cursor: pointer;
+}
+
+body {
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #f30;
+}
+
+a:hover {
+  color: #f90;
+}
+
+#main {
+  position: absolute;
+
+  top: 40px;
+  left: 280px;
+
+  width: 500px;
+}
+
+#main h1 {
+  font-size: 40px;
+  font-weight: normal;
+
+  line-height: 40px;
+
+  letter-spacing: -1px;
+}
+
+#main p {
+  margin: 20px 0;
+
+  font-size: 15px;
+
+  line-height: 20px;
+}
+
+#main ul, #main ol {
+  margin: 20px;
+}
+
+#main li {
+  font-size: 15px;
+
+  line-height: 20px;
+}
+
+#main ul li {
+  list-style-type: square;
+}
+
+#sidebar {
+  position: absolute;
+
+  top: 40px;
+  left: 20px;
+  width: 200px;
+
+  padding: 20px 20px 0 0;
+
+  border-right: 1px solid #ccc;
+
+  text-align: right;
+}
+
+#sidebar h2 {
+  text-transform: uppercase;
+
+  font-size: 13px;
+
+  color: #333;
+
+  letter-spacing: 1px;
+
+  line-height: 20px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+
+  margin: 20px 0;
+}
+
+#sidebar li {
+  font-size: 14px;
+
+  line-height: 20px;
+}
+;
+T;@;@:versioni
