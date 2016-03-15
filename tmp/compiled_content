@@ -1,5 +1,5 @@
 {:	data{o:Nanoc::Identifier:
-@type:	full:@stringI"/index.html:ET{:default{	:	lasto:Nanoc::Int::TextualContent:@filename0;	I"�<!DOCTYPE HTML>
+@type:	full:@stringI"/index.erb:ET{:default{	:	lasto:Nanoc::Int::TextualContent:@filename0;	I"�<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -12,47 +12,38 @@
   <body>
     <div id="main">
       
+<h1>Definite Articles</h1>
+
 <h2>Nominativ</h2>
+<p>The subject of a sentence. <i>Who</i> or <i>what</i> is doing this?</p>
 
 <ul>
-  <li>
-    <span class="nom">Der Student</span> lernt Deutsch.<br/>
-    <i>The student learns German.</i>
-  </li>
-  <li>
-    <span class="nom">Das</span> ist <abbr title="der Tisch" class="nom">ein Tisch</abbr>.<br/>
-    <i>That is a table.</i>
-  </li>
+  <li><span class='case nom'>der Student</span> lernt Deutsch.</li>
+  <li><span class='case nom'>die Orange</span> ist lecker.</li>
+  <li><span class='case nom'>das Boot</span> sinkt.</li>
+  <li><span class='case nom'>die Kinder</span> spielen.</li>
 </ul>
 
 <h2>Akkusativ</h2>
+<p>The direct object of a sentence. <i>Who</i> or <i>what</i> is being <i>verbed</i>?</p>
 
 <ul>
-  <li>
-    Ich habe <abbr title="der Tisch" class="akk">einen Tisch</abbr>.<br/>
-    <i>I have a table</i>
-  </li>
-  <li>
-    Er geht <span class="akk">um <abbr title="der Tisch">den Tisch</abbr></span>.<br/>
-    <i>He goes around the table.</i>
-  </li>
-  <li>
-    Ist das Geschenk <span class="akk">für mich?</span><br/>
-    <i>Is that gift for me?</i>
-  </li>
+
+  <li>Wir kaufen <span class='case akk'><abbr title='akk: der &rarr; den'>den</abbr> Computer</span>.</li>
+  <li>Er tötet <span class='case akk'>die Kuh</span>.</li>
+  <li>Ich habe <span class='case akk'>das Mikrofon</span>.</li>
+  <li>Sie machen <span class='case akk'>die Hausaufgaben</span>.</li>
 </ul>
 
+
 <h2>Dativ</h2>
+<p>The indirect object of a sentence. The beneficiary of whatever happens in a sentence. Ask yourself: <i>to</i> whom or <i>for</i> whom is this being done?</p>
 
 <ul>
-  <li>
-    Ich gebe <abbr title="die Frau" class="dat">der Frau</abbr> <abbr class="nom" title="das Buch">ein Buch</abbr>.<br/>
-    <i>I am giving a book to the woman.</i>
-  </li>
-  <li>
-    Er schenkt <span class="dat">mir</span> <abbr class="nom" title="das Buch">ein Buch</abbr>.<br/>
-    <i>He is giving me a book.</i>
-  </li>
+  <li>Ich gebe <span class='case dat'><abbr title='dat: der &rarr; dem'>dem</abbr> Mann</span> den Ball.</li>
+  <li>die &rarr; der</li>
+  <li>Er schenkte <span class='case dat'><abbr title='dat: das &rarr; dem'>dem</abbr> Mädchen</span> das Buch.</li>
+  <li>pl &rarr; den</li>
 </ul>
 
     </div>
@@ -62,49 +53,40 @@
   </body>
 </html>
 ;
-T:rawo;;I"K/Users/samstarling/Development/personal/nom-akk-dat/content/index.html;
-T;	I"
+T:rawo;;I"J/Users/samstarling/Development/personal/nom-akk-dat/content/index.erb;
+T;	I"�
+<h1>Definite Articles</h1>
+
 <h2>Nominativ</h2>
+<p>The subject of a sentence. <i>Who</i> or <i>what</i> is doing this?</p>
 
 <ul>
-  <li>
-    <span class="nom">Der Student</span> lernt Deutsch.<br/>
-    <i>The student learns German.</i>
-  </li>
-  <li>
-    <span class="nom">Das</span> ist <abbr title="der Tisch" class="nom">ein Tisch</abbr>.<br/>
-    <i>That is a table.</i>
-  </li>
+  <li><%= nom 'der', 'Student' %> lernt Deutsch.</li>
+  <li><%= nom 'die', 'Orange' %> ist lecker.</li>
+  <li><%= nom 'das', 'Boot' %> sinkt.</li>
+  <li><%= nom 'die', 'Kinder' %> spielen.</li>
 </ul>
 
 <h2>Akkusativ</h2>
+<p>The direct object of a sentence. <i>Who</i> or <i>what</i> is being <i>verbed</i>?</p>
 
 <ul>
-  <li>
-    Ich habe <abbr title="der Tisch" class="akk">einen Tisch</abbr>.<br/>
-    <i>I have a table</i>
-  </li>
-  <li>
-    Er geht <span class="akk">um <abbr title="der Tisch">den Tisch</abbr></span>.<br/>
-    <i>He goes around the table.</i>
-  </li>
-  <li>
-    Ist das Geschenk <span class="akk">für mich?</span><br/>
-    <i>Is that gift for me?</i>
-  </li>
+
+  <li>Wir kaufen <%= akk 'der', 'Computer' %>.</li>
+  <li>Er tötet <%= akk 'die', 'Kuh' %>.</li>
+  <li>Ich habe <%= akk 'das', 'Mikrofon' %>.</li>
+  <li>Sie machen <%= akk 'die', 'Hausaufgaben' %>.</li>
 </ul>
 
+
 <h2>Dativ</h2>
+<p>The indirect object of a sentence. The beneficiary of whatever happens in a sentence. Ask yourself: <i>to</i> whom or <i>for</i> whom is this being done?</p>
 
 <ul>
-  <li>
-    Ich gebe <abbr title="die Frau" class="dat">der Frau</abbr> <abbr class="nom" title="das Buch">ein Buch</abbr>.<br/>
-    <i>I am giving a book to the woman.</i>
-  </li>
-  <li>
-    Er schenkt <span class="dat">mir</span> <abbr class="nom" title="das Buch">ein Buch</abbr>.<br/>
-    <i>He is giving me a book.</i>
-  </li>
+  <li>Ich gebe <%= dat 'der', 'Mann' %> den Ball.</li>
+  <li>die &rarr; der</li>
+  <li>Er schenkte <%= dat 'das', 'Mädchen' %> das Buch.</li>
+  <li>pl &rarr; den</li>
 </ul>
 ;
 T:pre@:	post@o;;;;	I"/stylesheet.css;
