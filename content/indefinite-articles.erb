@@ -1,0 +1,32 @@
+---
+title: Indefinite Articles
+---
+
+<h1>Indefinite Articles</h1>
+
+<h2>Nominativ</h2>
+<p>The subject of a sentence. <i>Who</i> or <i>what</i> is doing this?</p>
+
+<ul>
+  <li><%= indefinite_article(der('Student'), :n) %> lernt Deutsch.</li>
+  <li><%= indefinite_article(die('Orange'), :n) %> ist lecker.</li>
+  <li><%= indefinite_article(das('Boot'), :n) %> sinkt.</li>
+</ul>
+
+<h2>Akkusativ</h2>
+<p>The direct object of a sentence. <i>Who</i> or <i>what</i> is being <i>verbed</i>?</p>
+
+<ul>
+  <li>Wir kaufen <%= indefinite_article(der('Computer'), :a) %>.</li>
+  <li>Er tötet <%= indefinite_article(die('Kuh'), :a) %>.</li>
+  <li>Ich habe <%= indefinite_article(das('Mikrofon'), :a) %>.</li>
+</ul>
+
+<h2>Dativ</h2>
+<p>The indirect object of a sentence. The beneficiary of whatever happens in a sentence. Ask yourself: <i>to</i> whom or <i>for</i> whom is this being done?</p>
+
+<ul>
+  <li>Ich gebe <%= indefinite_article(der('Mann'), :d) %> <%= definite_article(der('Ball'), :a) %>.</li>
+  <li>Ich gebe <%= indefinite_article(die('Frau'), :d) %> <%= definite_article(der('Ball'), :a) %>.</li>
+  <li>Ich gebe <%= indefinite_article(das('Mädchen'), :d) %> <%= definite_article(der('Ball'), :a) %>.</li>
+</ul>

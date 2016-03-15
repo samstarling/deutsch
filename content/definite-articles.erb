@@ -1,0 +1,35 @@
+---
+title: Definite Articles
+---
+
+<h1>Definite Articles</h1>
+
+<h2>Nominativ</h2>
+<p>The subject of a sentence. <i>Who</i> or <i>what</i> is doing this?</p>
+
+<ul>
+  <li><%= definite_article(der('Student'), :n) %> lernt Deutsch.</li>
+  <li><%= definite_article(die('Orange'), :n) %> ist lecker.</li>
+  <li><%= definite_article(das('Boot'), :n) %> sinkt.</li>
+  <li><%= definite_article(pl('Kinder'), :n) %> spielen.</li>
+</ul>
+
+<h2>Akkusativ</h2>
+<p>The direct object of a sentence. <i>Who</i> or <i>what</i> is being <i>verbed</i>?</p>
+
+<ul>
+  <li>Wir kaufen <%= definite_article(der('Computer'), :a) %>.</li>
+  <li>Er tötet <%= definite_article(die('Kuh'), :a) %>.</li>
+  <li>Ich habe <%= definite_article(das('Mikrofon'), :a) %>.</li>
+  <li>Sie machen <%= definite_article(pl('Hausaufgaben'), :a) %>.</li>
+</ul>
+
+<h2>Dativ</h2>
+<p>The indirect object of a sentence. The beneficiary of whatever happens in a sentence. Ask yourself: <i>to</i> whom or <i>for</i> whom is this being done?</p>
+
+<ul>
+  <li>Ich gebe <%= definite_article(der('Mann'), :d) %> <%= definite_article(der('Ball'), :a) %>.</li>
+  <li>Ich gebe <%= definite_article(die('Frau'), :d) %> <%= definite_article(der('Ball'), :a) %>.</li>
+  <li>Ich gebe <%= definite_article(das('Mädchen'), :d) %> <%= definite_article(der('Ball'), :a) %>.</li>
+  <li>Ich gebe <%= definite_article(pl('Kinder'), :d) %> <%= definite_article(der('Ball'), :a) %>.</li>
+</ul>
