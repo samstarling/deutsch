@@ -3,7 +3,12 @@
 compile '/**/*.erb' do
   layout '/default.*'
   filter :erb
-  write @item.identifier.without_ext + '/index.html'
+  #write @item.identifier.without_ext + '/index.html'
+  if item.identifier =~ '/index.*'
+    write '/index.html'
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
 end
 
 route '/**/*.{html,md}' do

@@ -1,9 +1,26 @@
 body {
-  margin: 0 auto;
-  max-width: 500px;
+  margin: 20px;
   font-family: 'Helvetica Neue';
   line-height: 1.3;
   font-size: 14px;
+  background: #eee;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table tr th {
+  background: #eee;
+}
+
+table tr th, table tr td {
+  padding: 5px 8px;
+  border: 1px solid #ddd;
 }
 
 .case-n {
