@@ -1,0 +1,126 @@
+---
+title: Pronouns
+---
+
+<h1>Pronouns</h1>
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Nom.</th>
+      <th>Akk.</th>
+      <th>Dat.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>I</th>
+      <td>ich</td>
+      <td>mich</td>
+      <td>mir</td>
+    </tr>
+    <tr>
+      <th>You <span class="quiet">(inf. sing.)</span></th>
+      <td>du</td>
+      <td>dich</td>
+      <td>dir</td>
+    </tr>
+    <tr>
+      <th>He</th>
+      <td>er</td>
+      <td>ihn</td>
+      <td>ihm</td>
+    </tr>
+    <tr>
+      <th>She</th>
+      <td>sie</td>
+      <td>sie</td>
+      <td>ihr</td>
+    </tr>
+    <tr>
+      <th>It</th>
+      <td>es</td>
+      <td>es</td>
+      <td>ihm</td>
+    </tr>
+    <tr>
+      <th>We</th>
+      <td>wir</td>
+      <td>uns</td>
+      <td>uns</td>
+    </tr>
+    <tr>
+      <th>You <span class="quiet">(inf. pl.)</span></th>
+      <td>ihr</td>
+      <td>euch</td>
+      <td>euch</td>
+    </tr>
+    <tr>
+      <th>They</th>
+      <td>sie</td>
+      <td>sie</td>
+      <td>ihnen</td>
+    </tr>
+    <tr>
+      <th>You <span class="quiet">(form.)</span></th>
+      <td>Sie</td>
+      <td>Sie</td>
+      <td>Ihnen</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<h3>I</h3>
+<ul>
+  <li><%= nom('Ich') %> heiße Sam.</li>
+  <li><%= nom('Ich') %> bin 28 Jahre alt.</li>
+  <li><%= nom('Ich') %> wohne in Berlin.</li>
+  <li>Liebst du <%= akk('mich') %>?</li>
+  <li>Bitte ruf <%= akk('mich') %> an.</li>
+  <li>Geh ohne <%= akk('mich') %>.</li>
+  <li><%= dat('Mir') %> ist kalt.</li>
+  <li>Gib <%= definite_article(der('Ball'), :a) %> zu <%= dat('mir') %>.</li>
+  <li>Es gehört <%= dat('mir') %>.</li>
+</ul>
+
+<h3>You</h3>
+<ul>
+  <li><%= nom('Du') %> siehst müde aus.</li>
+  <li>Gehst <%= nom('du') %> nach Hause?</li>
+  <li>Kommst <%= nom('du') %> mit?</li>
+  <li>Das ist für <%= akk('dich') %>.</li>
+  <li>Ich warne <%= akk('dich') %>!</li>
+  <li>Es gibt ein Brief für <%= akk('dich') %>.</li>
+  <li>Ich werde mit <%= dat('dir') %> gehen.</li>
+  <li>Ich gebe <%= dat('dir') %> <%= definite_article(das('Geschenk'), :a) %>.</li>
+  <li>Alles gut bei <%= dat('dir') %>?</li>
+</ul>
+
+<h3>He</h3>
+<ul>
+  <li><%= nom('Er') %> ist schön.</li>
+  <li>Ist <%= nom('er') %> ein Polizist?</li>
+  <li><%= nom('Er') %> gab keine Antwort.</li>
+  <li><%= akk('ihn') %></li>
+  <li><%= akk('ihn') %></li>
+  <li><%= akk('ihn') %></li>
+  <li><%= dat('ihm') %></li>
+  <li><%= dat('ihm') %></li>
+  <li>der Kühlschrank ist hinter <%= dat('ihm') %>.</li>
+</ul>
+
+
+<!-- <ul>
+  <li><%= nom('') %></li>
+  <li><%= nom('') %></li>
+  <li><%= nom('') %></li>
+  <li><%= akk('') %></li>
+  <li><%= akk('') %></li>
+  <li><%= akk('') %></li>
+  <li><%= dat('') %></li>
+  <li><%= dat('') %></li>
+  <li><%= dat('') %></li>
+</ul> -->
