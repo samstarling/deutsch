@@ -49,9 +49,9 @@ class WordDisplay
 
   def to_s
     if @prefix == @word.definite_article
-      "<span class='case-#{@case}'>#{@prefix} #{@word.word}</span>"
+      "<span class='case case-#{@case}'>#{@prefix} #{@word.word}</span>"
     else
-      "<span class='case-#{@case}'><abbr title='#{@word.definite_article}'>#{@prefix}</abbr> #{@word.word}</span>"
+      "<span class='case case-#{@case}'><abbr title='#{@word.definite_article}'>#{@prefix}</abbr> #{@word.word}</span>"
     end
   end
 end
@@ -65,6 +65,18 @@ module GermanHelper
   def indefinite_article w, c
     prefix = IndefiniteArticle.for(w, c)
     WordDisplay.new(prefix, w, c)
+  end
+
+  def nom text
+    "<span class='case case-n'>#{text}</span>"
+  end
+
+  def akk text
+    "<span class='case case-a'>#{text}</span>"
+  end
+
+  def dat text
+    "<span class='case case-d'>#{text}</span>"
   end
 
   def der word
