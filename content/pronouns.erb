@@ -83,7 +83,7 @@ title: Pronouns
   <li>Geh ohne <%= akk('mich') %>.</li>
   <li><%= dat('Mir') %> ist kalt.</li>
   <li>Gib <%= definite_article(der('Ball'), :a) %> zu <%= dat('mir') %>.</li>
-  <li>Es gehört <%= dat('mir') %>.</li>
+  <li><%= nom('Es') %> gehört <%= dat('mir') %>.</li>
 </ul>
 
 <h3>You <span class="quiet">(inf. sing.)</span></h3>
@@ -94,8 +94,8 @@ title: Pronouns
   <li>Das ist für <%= akk('dich') %>.</li>
   <li>Ich warne <%= akk('dich') %>!</li>
   <li>Es gibt ein Brief für <%= akk('dich') %>.</li>
-  <li>Ich werde mit <%= dat('dir') %> gehen.</li>
-  <li>Ich gebe <%= dat('dir') %> <%= definite_article(das('Geschenk'), :a) %>.</li>
+  <li><%= nom('Ich') %> werde mit <%= dat('dir') %> gehen.</li>
+  <li><%= nom('Ich') %> gebe <%= dat('dir') %> <%= definite_article(das('Geschenk'), :a) %>.</li>
   <li>Alles gut bei <%= dat('dir') %>?</li>
 </ul>
 
@@ -117,17 +117,17 @@ title: Pronouns
   <li><%= nom('Sie') %> war nicht da.</li>
   <li>Wird <%= nom('sie') %> bald kommen?</li>
   <li><%= nom('Sie') %> ist nicht sehr freundlich.</li>
-  <li>Ich hasse <%= akk('sie') %>!</li>
-  <li><%= akk('sie') %></li>
-  <li><%= akk('sie') %></li>
-  <li>Hast du mit <%= dat('ihr') %> gesprochen?</li>
+  <li><%= nom('Ich') %> hasse <%= akk('sie') %>!</li>
+  <li><%= nom('Wir') %> sollten <%= akk('sie') %> fragen.</li>
+  <li><%= nom('Sie') %> sollten <%= akk('sie') %> reinigen.</li>
+  <li>Hast <%= nom('du') %> mit <%= dat('ihr') %> gesprochen?</li>
   <li><%= dat('ihr') %></li>
   <li><%= dat('ihr') %></li>
 </ul>
 
 <h3>It</h3>
 <ul>
-  <li><%= nom('es') %></li>
+  <li><%= nom('Es') %> was ein schöner Abend.</li>
   <li><%= nom('es') %></li>
   <li><%= nom('es') %></li>
   <li><%= akk('es') %></li>
@@ -140,8 +140,8 @@ title: Pronouns
 
 <h3>We</h3>
 <ul>
-  <li><%= nom('wir') %></li>
-  <li><%= nom('wir') %></li>
+  <li><%= nom('Wir') %> lernen Deutsch.</li>
+  <li>Sollen <%= nom('wir') %> zu Berghain gehen?</li>
   <li><%= nom('wir') %></li>
   <li><%= akk('uns') %></li>
   <li><%= akk('uns') %></li>
@@ -153,7 +153,7 @@ title: Pronouns
 
 <h3>You <span class="quiet">(inf. pl.)</span></h3>
 <ul>
-  <li><%= nom('ihr') %></li>
+  <li><%= nom('Ihr') %> seid wünderbar!</li>
   <li><%= nom('ihr') %></li>
   <li><%= nom('ihr') %></li>
   <li><%= akk('euch') %></li>
@@ -166,7 +166,7 @@ title: Pronouns
 
 <h3>They</h3>
 <ul>
-  <li><%= nom('sie') %></li>
+  <li><%= nom('Sie') %> sind Männer.</li>
   <li><%= nom('sie') %></li>
   <li><%= nom('sie') %></li>
   <li><%= akk('sie') %></li>
@@ -179,7 +179,7 @@ title: Pronouns
 
 <h3>You <span class="quiet">(form.)</span></h3>
 <ul>
-  <li><%= nom('Sie') %></li>
+  <li>Verkaufen <%= nom('Sie') %> Brot?</li>
   <li><%= nom('Sie') %></li>
   <li><%= nom('Sie') %></li>
   <li><%= akk('Sie') %></li>
