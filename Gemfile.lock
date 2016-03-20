@@ -28,6 +28,8 @@ GEM
     method_source (0.8.2)
     nanoc (4.1.4)
       cri (~> 2.3)
+    nanoc-git (1.0.1)
+      nanoc (>= 3.7.0, < 5.0.0)
     nenv (0.3.0)
     notiffany (0.0.8)
       nenv (~> 0.1)
@@ -49,3 +51,4 @@ PLATFORMS
 DEPENDENCIES
   guard-nanoc
   nanoc
+  nanoc-git
