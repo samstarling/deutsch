@@ -1,0 +1,20 @@
+
+<h2>Akkusativ</h2>
+<p>The direct object of a sentence. <i>Who</i> or <i>what</i> is being <i>verbed</i>?</p>
+
+<ul>
+  <li>Wir kaufen <%= der('Computer').definite_article(:a) %>.</li>
+  <li>Er tötet <%= die('Kuh').definite_article(:a) %>.</li>
+  <li>Ich habe <%= das('Mikrofon').definite_article(:a) %>.</li>
+  <li>Sie machen <%= pl('Hausaufgaben').definite_article(:a) %>.</li>
+</ul>
+
+<h2>Dativ</h2>
+<p>The indirect object of a sentence. The beneficiary of whatever happens in a sentence. Ask yourself: <i>to</i> whom or <i>for</i> whom is this being done?</p>
+
+<ul>
+  <li>Ich gebe <%= der('Mann').definite_article(:d) %> den Ball.</li>
+  <li>Ich gebe <%= die('Frau').definite_article(:d) %> den Ball.</li>
+  <li>Ich gebe <%= das('Mädchen').definite_article(:d) %> den Ball.</li>
+  <li>Ich gebe <%= pl('Kinder').definite_article(:d) %> den Ball.</li>
+</ul>

@@ -1,0 +1,69 @@
+body {
+  margin: 20px;
+  font-family: 'Helvetica Neue';
+  line-height: 1.2;
+  font-size: 15px;
+  background: #fff;
+}
+
+h2, h3 {
+  font-weight: 500;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table tr td {
+  min-width: 65px;
+  text-align: center;
+}
+
+table tr th, table tr td {
+  padding: 5px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+table thead tr th {
+  border-top: none;
+  border-bottom: 1px solid #ccc;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+ul, ol {
+  margin-bottom: -3px;
+}
+
+.case, .highlight {
+  padding: 0px 3px 0 2px;
+}
+
+.highlight {
+  background: rgba(245, 215, 20, 0.25);
+}
+
+.case-n {
+  background: rgba(217, 48, 21, 0.17);
+}
+
+.case-a {
+  background: rgba(111, 217, 4, 0.20);
+}
+
+.case-d {
+  background: rgba(13, 101, 217, 0.17);
+}
+
+.quiet {
+  font-size: 80%;
+  font-weight: 400;
+  color: #666;
+}
+
+abbr {
+  border-bottom: 1px solid #aaa;
+  cursor: pointer;
+}
