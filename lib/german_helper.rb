@@ -67,6 +67,10 @@ module GermanHelper
     WordDisplay.new(prefix, w, c)
   end
 
+  def hi text
+    "<span class='highlight'>#{text}</span>"
+  end
+
   def nom text
     "<span class='case case-n'>#{text}</span>"
   end

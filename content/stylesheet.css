@@ -37,8 +37,12 @@ ul, ol {
   margin-bottom: -3px;
 }
 
-.case {
+.case, .highlight {
   padding: 0px 3px 0 2px;
+}
+
+.highlight {
+  background: yellow;
 }
 
 .case-n {
