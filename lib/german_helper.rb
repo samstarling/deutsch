@@ -83,6 +83,10 @@ module GermanHelper
     "<span class='case case-d'>#{text}</span>"
   end
 
+  def abbr text, description
+    "<abbr title='#{description}'>#{text}</abbr>"
+  end
+
   def der word
     Word.new(:m, word)
   end
