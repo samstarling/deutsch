@@ -26,11 +26,14 @@ GEM
       rb-inotify (>= 0.9.7)
     lumberjack (1.0.10)
     method_source (0.8.2)
+    mini_portile2 (2.0.0)
     nanoc (4.1.4)
       cri (~> 2.3)
     nanoc-git (1.0.1)
       nanoc (>= 3.7.0, < 5.0.0)
     nenv (0.3.0)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
     notiffany (0.0.8)
       nenv (~> 0.1)
       shellany (~> 0.0)
@@ -52,3 +55,4 @@ DEPENDENCIES
   guard-nanoc
   nanoc
   nanoc-git
+  nokogiri
