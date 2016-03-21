@@ -12,6 +12,7 @@ h2, h3 {
 
 table {
   border-collapse: collapse;
+  font-size: 13px;
 }
 
 table tr td {
