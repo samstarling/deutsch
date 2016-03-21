@@ -1,9 +1,13 @@
 body {
-  margin: 20px;
+  margin: 0px;
   font-family: 'Helvetica Neue';
   line-height: 1.2;
   font-size: 15px;
   background: #fff;
+}
+
+#main {
+  padding: 20px;
 }
 
 h2, h3 {
@@ -12,7 +16,8 @@ h2, h3 {
 
 table {
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 14px;
+  width: 100%;
 }
 
 table tr td {
