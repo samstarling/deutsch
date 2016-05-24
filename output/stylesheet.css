@@ -10,6 +10,13 @@ a {
   color: #666;
 }
 
+hr {
+  background: #ddd;
+  height: 1px;
+  border: 0;
+  margin: 2em 0 1.8em 0;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -18,9 +25,12 @@ a:hover {
   padding: 20px;
 }
 
+.de {
+  color: #aaa;
+}
+
 h1 .de {
   font-weight: 300;
-  color: #aaa;
 }
 
 h2, h3 {
