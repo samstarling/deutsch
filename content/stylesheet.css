@@ -10,6 +10,10 @@ a {
   color: #666;
 }
 
+p, li {
+  line-height: 1.4;
+}
+
 hr {
   background: #ddd;
   height: 1px;
@@ -59,11 +63,7 @@ table thead tr th {
 }
 
 li {
-  margin-bottom: 3px;
-}
-
-ul, ol {
-  margin-bottom: -3px;
+  margin-bottom: 1px;
 }
 
 .case, .highlight {
