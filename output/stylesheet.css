@@ -6,8 +6,21 @@ body {
   background: #fff;
 }
 
+a {
+  color: #666;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 #main {
   padding: 20px;
+}
+
+h1 .de {
+  font-weight: 300;
+  color: #aaa;
 }
 
 h2, h3 {
@@ -67,6 +80,13 @@ ul, ol {
   font-size: 80%;
   font-weight: 400;
   color: #666;
+}
+
+.component {
+  background: #eee;
+  padding: 2px 5px 2px 4px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
 }
 
 abbr {
