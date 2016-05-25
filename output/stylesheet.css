@@ -6,12 +6,32 @@ body {
   background: #fff;
 }
 
+header {
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+  padding: 15px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 300;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: 300;
+  color: #999;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 a {
   color: #2384D9;
 }
 
 p, li {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 hr {
@@ -26,7 +46,7 @@ a:hover {
 }
 
 #main {
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
 }
 
 .de {
@@ -109,6 +129,10 @@ table .highlight {
   font-size: 80%;
   padding: 0.8em 0;
   letter-spacing: 0.15em;
+}
+
+p.subheading {
+  margin-top: -1em;
 }
 
 abbr {
