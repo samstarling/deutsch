@@ -70,6 +70,10 @@ li {
   padding: 0px 3px 0 2px;
 }
 
+table .highlight {
+  padding: 0;
+}
+
 .highlight {
   background: rgba(245, 215, 20, 0.25);
 }
