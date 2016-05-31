@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  font-family: 'Helvetica Neue';
+  font-family: -apple-system , '.SFNSText-Regular' , 'Helvetica Neue' , 'Roboto' , 'Segoe UI' , sans-serif;
   line-height: 1.2;
   font-size: 15px;
   background: #fff;
