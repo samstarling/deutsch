@@ -1,5 +1,5 @@
 body {
-  margin: 0px auto;
+  margin: 10px auto 20px auto;
   font-family: -apple-system , '.SFNSText-Regular' , 'Helvetica Neue' , 'Roboto' , 'Segoe UI' , sans-serif;
   line-height: 1.2;
   font-size: 15px;
@@ -108,6 +108,7 @@ table .highlight {
 
 .highlight {
   background: rgba(245, 215, 20, 0.25);
+  font-weight: 500;
 }
 
 .case-n {
