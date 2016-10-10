@@ -1,13 +1,13 @@
 body {
-  margin: 0px;
+  margin: 0px auto;
   font-family: -apple-system , '.SFNSText-Regular' , 'Helvetica Neue' , 'Roboto' , 'Segoe UI' , sans-serif;
   line-height: 1.2;
   font-size: 15px;
   background: #fff;
+  max-width: 800px;
 }
 
 header {
-  background: #fafafa;
   border-bottom: 1px solid #eee;
   padding: 15px 20px;
 }
