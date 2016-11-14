@@ -27,9 +27,13 @@ title: Indefinite Articles
     <td>ein</td>
     <td>einem</td>
   </tr>
+  <tr>
+    <th>Pl.</th>
+    <td><%= quiet 'N/A' %></td>
+    <td><%= quiet 'N/A' %></td>
+    <td><%= quiet 'N/A' %></td>
+  </tr>
 </table>
-
-<!-- TODO: It has no direct form for a plural; in this situation a range of alternatives such as einige (some; several) or manche (some) would be used. -->
 
 <h2>Nominativ</h2>
 <ul>
@@ -51,3 +55,6 @@ title: Indefinite Articles
   <li>Ich gebe <%= indefinite_article(die('Frau'), :d) %> <%= definite_article(der('Ball'), :a) %>.</li>
   <li>Ich gebe <%= indefinite_article(das('Mädchen'), :d) %> <%= definite_article(der('Ball'), :a) %>.</li>
 </ul>
+
+<h2>Plural</h2>
+<p>There is no direct form for a plural. There are a range of alternatives such as <i>einige</i> (some/several) or <i>manche</i> (some) that can be used.</p>

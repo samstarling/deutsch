@@ -71,6 +71,10 @@ module GermanHelper
     "<span class='highlight'>#{text}</span>"
   end
 
+  def quiet text
+    "<span class='quiet'>#{text}</span>"
+  end
+
   def nom text
     "<span class='case case-n'>#{text}</span>"
   end
