@@ -1,3 +1,38 @@
+class Noun
+  def initialize gender, word, c = :nom
+    @gender = gender
+    @word = word
+    @original_case = c
+    @case = c
+  end
+
+  def to_s
+    "#{definite_article} #{@word} (#{@original_case} &rarr; #{@case})"
+  end
+
+  def as c
+    @case = c
+    self
+  end
+
+  def definite_article
+    {
+      mask: { nom: 'der', akk: 'den', dat: 'dem' },
+      fem:  { nom: 'die', akk: 'die', dat: 'der' },
+      neu:  { nom: 'das', akk: 'das', dat: 'dem' },
+      pl:   { nom: 'die', akk: 'die', dat: 'den' }
+    }[@gender][@case]
+  end
+
+  def indefinite_article
+    {
+      mask: { n: 'ein',  a: 'einen', d: 'einem' },
+      fem:  { n: 'eine', a: 'eine',  d: 'einer' },
+      neu:  { n: 'ein',  a: 'ein',   d: 'einem' }
+    }[@gender][@case]
+  end
+end
+
 class Word
   def initialize gender, word
     @gender = gender
@@ -32,9 +67,9 @@ end
 class IndefiniteArticle
   def self.for w, c
     rules = {
-      m:  { n: 'ein',  a: 'einen', d: 'einem' },
-      f:  { n: 'eine', a: 'eine',  d: 'einer' },
-      n:  { n: 'ein',  a: 'ein',   d: 'einem' }
+      m: { n: 'ein',  a: 'einen', d: 'einem' },
+      f: { n: 'eine', a: 'eine',  d: 'einer' },
+      n: { n: 'ein',  a: 'ein',   d: 'einem' }
     }
     rules[w.gender][c]
   end
@@ -51,7 +86,7 @@ class WordDisplay
     if @prefix == @word.definite_article
       "<span class='case case-#{@case}'>#{@prefix} #{@word.word}</span>"
     else
-      "<span class='case case-#{@case}'><abbr title='#{@word.definite_article}'>#{@prefix}</abbr> #{@word.word}</span>"
+      "<span class='case case-#{@case}'><abbr title='#{@word.definite_article} &rarr; #{@prefix}'>#{@prefix}</abbr> #{@word.word}</span>"
     end
   end
 end
