@@ -3,14 +3,34 @@
   <head>
     <title><%= @item[:title] %> | Deutsch</title>
     <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
     <meta name="google" content="notranslate"></meta>
     <meta charset="utf-8"></meta>
   </head>
-  <body>
+  <body class="sans-serif w-100 black-70">
+    <nav class="bb b--black-10">
+      <div class="pa3 ph5-ns f6 black-40">
+        Deutsch
+        <span class="mr1 ml1">&middot;</span>
+        <a href="/">Home</a>
+      </div>
+    </nav>
     <header>
+    </header>
+    <article>
+      <div class="pa3 ph5-ns">
+        <h1 class="f1"><%= @item[:title] %></h1>
+        <div class="f5 f4-ns lh-copy measure">
+          <%= yield %>
+        </div>
+      </div>
+    </article>
+  </body>
+  <body>
+    <!--<header>
       <a id="home" href="/">Home</a>
       <% if @item[:title_de] %>
         <h1><%= @item[:title_de] %></h1>
@@ -22,7 +42,7 @@
       <% end %>
     </header>
     <div id="main">
-      <%= yield %>
-    </div>
+
+    </div>-->
   </body>
 </html>
