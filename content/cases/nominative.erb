@@ -2,3 +2,37 @@
 title: Nominative
 section: Cases
 ---
+
+<p>The nominative case is used for the subject of the sentence. The subject is the thing that is 'doing' the action.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Masc.</th>
+      <th>Fem.</th>
+      <th>Neu.</th>
+      <th>Pl.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>der / ein</td>
+      <td>die / eine</td>
+      <td>das / ein</td>
+      <td>die</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Examples</h2>
+<ul>
+  <li><%= definite_article(das('Mädchen'), :n) %> spielt Klavier.</li>
+  <li><%= definite_article(der('Hund'), :n) %> schläft.</li>
+  <li><%= definite_article(die('Gans'), :n) %> ist wirklich wütend.</li>
+</ul>
+
+<p>It is also used after <b>sein</b> (to be) and <b>werden</b> (to become):</p>
+<ul>
+  <li>Er ist <%= nom 'ein' %> guter Lehrer.</li>
+  <li>Das wird <%= indefinite_article(der('Pullover'), :n) %></li>
+</ul>
