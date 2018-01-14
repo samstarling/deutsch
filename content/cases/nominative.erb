@@ -5,24 +5,14 @@ section: Cases
 
 <p>The nominative case is used for the subject of the sentence. The subject is the thing that is 'doing' the action.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Masc.</th>
-      <th>Fem.</th>
-      <th>Neu.</th>
-      <th>Pl.</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>der / ein</td>
-      <td>die / eine</td>
-      <td>das / ein</td>
-      <td>die</td>
-    </tr>
-  </tbody>
-</table>
+<%= render '/table.*', {
+  headers: [
+    "Masc.", "Fem.", "Neu", "Pl."
+  ],
+  rows: [
+    ["", "der/ein", "die/eine", "das/ein", "die"]
+  ],
+} %>
 
 <h2>Examples</h2>
 <ul>

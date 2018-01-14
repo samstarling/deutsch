@@ -5,24 +5,14 @@ section: Cases
 
 <p>The dative case shows the indirect object of a verb. It also comes after certain verbs or prepositions.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Masc.</th>
-      <th>Fem.</th>
-      <th>Neu.</th>
-      <th>Pl.</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>dem / einem</td>
-      <td>der / einer</td>
-      <td>dem / einem</td>
-      <td>den</td>
-    </tr>
-  </tbody>
-</table>
+<%= render '/table.*', {
+  headers: [
+    "Masc.", "Fem.", "Neu", "Pl."
+  ],
+  rows: [
+    ["", "dem/einem", "der/einer", "dem/einem", "den"]
+  ],
+} %>
 
 <h2>Examples</h2>
 <ul>

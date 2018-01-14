@@ -10,7 +10,9 @@
     <% rows.each do |row| %>
     <tr>
       <% heading, *values = row %>
+      <% unless heading.empty? %>
       <td class="pv2 pr3 bb b--black-10 b"><%= heading %></td>
+      <% end %>
       <% values.each do |value| %>
       <td class="pv2 pr3 bb b--black-10"><%= value %></td>
       <% end %>
