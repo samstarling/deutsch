@@ -2,72 +2,23 @@
 title: Pronouns
 ---
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>Nom.</th>
-      <th>Akk.</th>
-      <th>Dat.</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>I</th>
-      <td>ich</td>
-      <td>mich</td>
-      <td>mir</td>
-    </tr>
-    <tr>
-      <th>You <span class="quiet">(sing.)</span></th>
-      <td>du</td>
-      <td>dich</td>
-      <td>dir</td>
-    </tr>
-    <tr>
-      <th>He</th>
-      <td>er</td>
-      <td>ihn</td>
-      <td>ihm</td>
-    </tr>
-    <tr>
-      <th>She</th>
-      <td>sie</td>
-      <td>sie</td>
-      <td>ihr</td>
-    </tr>
-    <tr>
-      <th>It</th>
-      <td>es</td>
-      <td>es</td>
-      <td>ihm</td>
-    </tr>
-    <tr>
-      <th>We</th>
-      <td>wir</td>
-      <td>uns</td>
-      <td>uns</td>
-    </tr>
-    <tr>
-      <th>You <span class="quiet">(pl.)</span></th>
-      <td>ihr</td>
-      <td>euch</td>
-      <td>euch</td>
-    </tr>
-    <tr>
-      <th>They</th>
-      <td>sie</td>
-      <td>sie</td>
-      <td>ihnen</td>
-    </tr>
-    <tr>
-      <th>You <span class="quiet">(form.)</span></th>
-      <td>Sie</td>
-      <td>Sie</td>
-      <td>Ihnen</td>
-    </tr>
-  </tbody>
-</table>
+<%= render '/table.*', {
+  headers: [
+    "", "Nom.", "Akk.", "Dat."
+  ],
+  rows: [
+    %w{I ich mich mir},
+    ['You (sing.)', 'du', 'dich', 'dir'],
+    %w{He er ihn ihm},
+    %w{She sie sie ihr},
+    %w{It es es ihm},
+    %w{We wir uns uns},
+    ["You (pl.)", "ihr", "euch", "euch"],
+    %w{They sie sie ihnen},
+    ["You (form.)", "Sie", "Sie", "Ihnen"]
+  ]
+} %>
+
 
 <h2>Examples</h2>
 

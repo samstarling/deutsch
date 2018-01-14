@@ -12,7 +12,7 @@
   </head>
   <body class="sans-serif w-100 black-70">
     <nav class="bb b--black-10">
-      <div class="pa3 ph5-ns f6 black-40">
+      <div class="mw8 center pa3 ph5-ns f6 black-40">
         Deutsch
         <span class="mr1 ml1">&middot;</span>
         <a href="/">Home</a>
@@ -20,9 +20,10 @@
     </nav>
     <header>
     </header>
-    <article>
+    <article class="mw8 center">
       <div class="pa3 ph5-ns">
-        <h1 class="f1"><%= @item[:title] %></h1>
+        <h1 class="f2 f1-ns"><%= @item[:title] %></h1>
+        <h2 class="f3 f2-ns"><%= @item[:title_de] %></h2>
         <div class="f5 f4-ns lh-copy measure">
           <%= yield %>
         </div>
