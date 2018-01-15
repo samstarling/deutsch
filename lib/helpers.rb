@@ -2,6 +2,12 @@ include GermanHelper
 include Nanoc::Helpers::Capturing
 include Nanoc::Helpers::Rendering
 
+def container_class
+  if @item.identifier != "/index.erb"
+    "measure"
+  end
+end
+
 class Cell
   attr_accessor :opts
 
