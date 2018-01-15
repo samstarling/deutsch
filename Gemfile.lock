@@ -42,8 +42,6 @@ GEM
       ddplugin (~> 1.0)
       hamster (~> 3.0)
       ref (~> 2.0)
-    nanoc-git (2.0.0)
-      nanoc (~> 4.5)
     nenv (0.3.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
@@ -70,8 +68,7 @@ DEPENDENCIES
   adsf
   guard-nanoc
   nanoc
-  nanoc-git
   nokogiri
 
 BUNDLED WITH
-   1.15.4
+   1.16.0
