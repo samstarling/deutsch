@@ -1,0 +1,21 @@
+<table class="w-100 f5 mb4" cellspacing="0">
+  <thead>
+    <tr class="ttu f6 fw6 black-30 tracked">
+      <% headers.each do |cell| %>
+        <th class="bb b--black-20 tl pb2 pr3"><%= cell.value %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody class="lh-copy">
+    <% rows.each do |row| %>
+      <tr class="<%= row.classes %>">
+      <% if row.label %>
+        <td class="pv2 pr3 bb b--black-10 b"><%= row.label %></td>
+      <% end %>
+      <% row.cells.each do |cell| %>
+        <td class="pv2 pr3 bb b--black-10 <%= cell.classes %>" colspan="<%= cell.colspan %>"><%= cell.value %></td>
+      <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

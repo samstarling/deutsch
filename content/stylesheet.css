@@ -13,3 +13,14 @@
 .case-d {
   background: rgba(13, 101, 217, 0.17);
 }
+
+a {
+  color: #357edd;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+a:hover {
+  border-bottom: none;
+  color: #00449e;
+}

@@ -2,38 +2,18 @@
 title: Indefinite Articles
 ---
 
-<table>
-  <tr>
-    <th></th>
-    <th>Nom.</th>
-    <th>Akk.</th>
-    <th>Dat.</th>
-  </tr>
-  <tr>
-    <th>Mask.</th>
-    <td>ein</td>
-    <td>einen</td>
-    <td>einem</td>
-  </tr>
-  <tr>
-    <th>Fem.</th>
-    <td>eine</td>
-    <td>eine</td>
-    <td>einer</td>
-  </tr>
-  <tr>
-    <th>Neu.</th>
-    <td>ein</td>
-    <td>ein</td>
-    <td>einem</td>
-  </tr>
-  <tr>
-    <th>Pl.</th>
-    <td><%= quiet 'N/A' %></td>
-    <td><%= quiet 'N/A' %></td>
-    <td><%= quiet 'N/A' %></td>
-  </tr>
-</table>
+<%= render '/table.*', {
+  headers: [
+    "", "Nom.", "Akk.", "Dat."
+  ],
+  rows: [
+    %w{Mask. ein einen einem},
+    %w{Fem. eine eine einer},
+    %w{Neu. ein ein einem},
+    ["Pl.", "<span class='black-10'>N/A</span>", "<span class='black-10'>N/A</span>", "<span class='black-10'>N/A</span>"]
+  ]
+}
+%>
 
 <h2>Nominativ</h2>
 <ul>

@@ -2,38 +2,17 @@
 title: Definite Articles
 ---
 
-<table>
-  <tr>
-    <th></th>
-    <th>Nom.</th>
-    <th>Akk.</th>
-    <th>Dat.</th>
-  </tr>
-  <tr>
-    <th>Mask.</th>
-    <td>der</td>
-    <td>den</td>
-    <td>dem</td>
-  </tr>
-  <tr>
-    <th>Fem.</th>
-    <td>die</td>
-    <td>die</td>
-    <td>der</td>
-  </tr>
-  <tr>
-    <th>Neu.</th>
-    <td>das</td>
-    <td>das</td>
-    <td>dem</td>
-  </tr>
-  <tr>
-    <th>Pl.</th>
-    <td>die</td>
-    <td>die</td>
-    <td>den</td>
-  </tr>
-</table>
+<%= render '/table.*', {
+  headers: [
+    "", "Nom.", "Akk.", "Dat."
+  ],
+  rows: [
+    %w{Mask. der den dem},
+    %w{Fem. die die der},
+    %w{Neu. das das dem},
+    %w{Pl. die die den},
+  ]
+} %>
 
 <h2>Nominativ</h2>
 

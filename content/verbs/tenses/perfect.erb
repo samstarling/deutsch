@@ -14,105 +14,36 @@ and usually refers to a single event that took place.</p>
   <li>Wir <%= hi 'haben' %> das Fußballspiel zusammen <%= hi 'gesehen' %>.</li>
 </ul>
 
-<hr/>
+<hr class="bb mv4 b--black-10"></hr>
 
-<table>
-  <thead>
-    <tr>
-      <th width="50%">Infinitiv</th>
-      <th width="50%">Partizip II</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="row-title" colspan="2">Regular verbs, no prefix</td>
-    </tr>
-    <tr>
-      <td>kaufen</td>
-      <td><%= hi 'ge' %>kauf<%= hi 't' %></td>
-    </tr>
-    <tr>
-      <td>regnen</td>
-      <td><%= hi 'ge' %>regn<%= hi 'et' %></td>
-    </tr>
-    <tr>
-      <td class="row-title" colspan="2">Regular verbs, separable prefix</td>
-    </tr>
-    <tr>
-      <td>einkaufen</td>
-      <td>ein<%= hi 'ge' %>kauf<%= hi 't' %></td>
-    </tr>
-    <tr>
-      <td>aufrunden</td>
-      <td>auf<%= hi 'ge' %>rund<%= hi 'et' %></td>
-    </tr>
-    <tr>
-      <td>abholen</td>
-      <td>ab<%= hi 'ge' %>hol<%= hi 't' %></td>
-    </tr>
-    <tr>
-      <td class="row-title" colspan="2">Regular verbs, inseparable prefix</td>
-    </tr>
-    <tr>
-      <td>benutzen</td>
-      <td>benutz<%= hi 't' %></td>
-    </tr>
-    <tr>
-      <td>entwickeln</td>
-      <td>entwickel<%= hi 't' %></td>
-    </tr>
-    <tr>
-      <td class="row-title" colspan="2">Verbs ending <i>-ieren</i></td>
-    </tr>
-    <tr>
-      <td>studieren</td>
-      <td>studier<%= hi 't' %></td>
-    </tr>
-    <tr>
-      <td>rotieren</td>
-      <td>rotier<%= hi 't' %></td>
-    </tr>
-    <tr>
-      <td>marinieren</td>
-      <td>marinier<%= hi 't' %></td>
-    </tr>
-    <tr>
-      <td class="row-title" colspan="2">Strong verbs</td>
-    </tr>
-    <tr>
-      <td>kommen</td>
-      <td><%= hi 'ge' %>kommen</td>
-    </tr>
-    <tr>
-      <td>fahren</td>
-      <td><%= hi 'ge' %>fahren</td>
-    </tr>
-    <tr>
-      <td>gehen</td>
-      <td><%= hi 'ge' %>gangen</td>
-    </tr>
-    <tr>
-      <td>singen</td>
-      <td><%= hi 'ge' %>sungen</td>
-    </tr>
-    <tr>
-      <td>stehen</td>
-      <td><%= hi 'ge' %>standen</td>
-    </tr>
-    <tr>
-      <td class="row-title" colspan="2">Common</td>
-    </tr>
-    <tr>
-      <td>sein</td>
-      <td>gewesen</td>
-    </tr>
-    <tr>
-      <td>haben</td>
-      <td>gehabt</td>
-    </tr>
-    <tr>
-      <td>werden</td>
-      <td>geworden</td>
-    </tr>
-  </tbody>
-</table>
+<%= render '/new_table.*', {
+  headers: [
+    Cell.new("Infinitiv"), Cell.new("Partizip II.")
+  ],
+  rows: [
+    Row.new([Cell.new("Regular verbs, no prefix", span: 2, class: 'ttu f6 black-50')]),
+    Row.new(["kaufen", "#{hi 'ge'}kauf#{hi 't'}"]),
+    Row.new(["regnen", "#{hi 'ge'}regn#{hi 'et'}"]),
+    Row.new([Cell.new("Regular verbs, separable prefix", span: 2, class: 'ttu f6 black-50')]),
+    Row.new(["einkaufen", "ein#{hi 'ge'}kauft"]),
+    Row.new(["aufrunden", "auf#{hi 'ge'}rundet"]),
+    Row.new(["abholen", "ab#{hi 'ge'}holt"]),
+    Row.new([Cell.new("Regular verbs, inseparable prefix", span: 2, class: 'ttu f6 black-50')]),
+    Row.new(["benutzen", "benutz#{hi 't'}"]),
+    Row.new(["entwickeln", "entwickel#{hi 't'}"]),
+    Row.new([Cell.new("Verbs ending -ieren", span: 2, class: 'ttu f6 black-50')]),
+    Row.new(["studieren", "studier#{hi 't'}"]),
+    Row.new(["rotieren", "rotier#{hi 't'}"]),
+    Row.new(["marinieren", "marinier#{hi 't'}"]),
+    Row.new([Cell.new("Strong verbs", span: 2, class: 'ttu f6 black-50')]),
+    Row.new(["kommen", "#{hi 'ge'}kommen"]),
+    Row.new(["fahren", "#{hi 'ge'}fahren"]),
+    Row.new(["gehen", "#{hi 'ge'}gangen"]),
+    Row.new(["singen", "#{hi 'ge'}sungen"]),
+    Row.new(["stehen", "#{hi 'ge'}standen"]),
+    Row.new([Cell.new("Common", span: 2, class: 'ttu f6 black-50')]),
+    Row.new(["sein", "gewesen"]),
+    Row.new(["haben", "gehabt"]),
+    Row.new(["werden", "geworden"])
+  ]
+} %>
